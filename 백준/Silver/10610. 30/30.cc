@@ -25,7 +25,7 @@ int main() {
 
 	long long sum = 0;
 	for (long long i = 0; i < str.length(); i++) {
-		sum += (str[i] - '0');
+		sum += str[i] - '0';
 	}
 	if (sum % 3 != 0) {
 		cout << -1;
@@ -34,7 +34,7 @@ int main() {
 
 	long long* arr = new long long[str.length()];
 	for (long long i = 0; i < str.length(); i++) {
-		arr[i] = (str[i] - '0');
+		arr[i] = str[i] - '0';
 	}
 
 	sort(arr, arr + str.length(), greater<>());
